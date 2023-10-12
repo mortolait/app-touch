@@ -1,4 +1,4 @@
-import { CardsContainer, HomeContainer } from "./styles";
+import { CardsContainer, HomeContainer, ImgPlataform } from "./styles";
 import Component1 from "../../assets/cards-plataforma/Component 1.png"
 import Component2 from "../../assets/cards-plataforma/Component 2.png"
 import Component3 from "../../assets/cards-plataforma/Component 3.png"
@@ -45,7 +45,7 @@ export function Home() {
                 }
             </CardsContainer>
             <NavLink to={'/examples'}>
-                <img src={buttonPlataform} alt="" />
+                <ImgPlataform src={buttonPlataform} alt="" />
             </NavLink>
 
         </HomeContainer>

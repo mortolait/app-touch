@@ -68,13 +68,12 @@ export const CardsContainer = styled.div`
         }
     }
 `
-export const ButtonPlataform = styled.a`
-       img{
-        width: 56rem;
-        height: 17rem;       
-       }
-
-       :hover{
+export const ImgPlataform = styled.img`   
+        width: 54rem;
+        @media(max-width: 1400px){
+            width: 40rem;
+        }
+       /* :hover{
         cursor: pointer;
-       }
+       } */
 `
