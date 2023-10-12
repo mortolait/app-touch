@@ -1,4 +1,4 @@
-import { ButtonPlataform, CardsContainer, HomeContainer } from "./styles";
+import { CardsContainer, HomeContainer } from "./styles";
 import Component1 from "../../assets/cards-plataforma/Component 1.png"
 import Component2 from "../../assets/cards-plataforma/Component 2.png"
 import Component3 from "../../assets/cards-plataforma/Component 3.png"
