@@ -11,19 +11,19 @@ export function Home() {
     const cardVantagens = [
         {
             path: Component1,
-            url: '#'
+            url: '../../../src/assets/pdfs/geo.pdf'
         },
         {
             path: Component2,
-            url: '#'
+            url: '../../../src/assets/pdfs/telemetriaeficienciaindustrial.pdf'
         },
         {
             path: Component3,
-            url: '#'
+            url: '../../../src/assets/pdfs/telemetriaveiculos.pdf'
         },
         {
             path: Component4,
-            url: '#'
+            url: '../../../src/assets/pdfs/visaocomputacional.pdf'
         }
     ]
     return (
@@ -38,7 +38,7 @@ export function Home() {
             <CardsContainer>
                 {
                     cardVantagens.map((x) => (
-                        <a href="#" key={x.path}>
+                        <a href={x.url} target="_blank" key={x.path}>
                             <img src={x.path} alt="" />
                         </a>
                     ))
