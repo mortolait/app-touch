@@ -9,6 +9,11 @@ export const HomeContainer = styled.div`
     background-image: url(${imgBackground});
     box-shadow: inset 0px -500px #D9D9D9;
 
+    @media(max-width: 1400px){
+        background-image: url(${imgBackground});
+        box-shadow: inset 0px -350px #D9D9D9;
+        }
+
     h1 {
         font-size: 2.5rem;
         font-weight: 700;
