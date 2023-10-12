@@ -1,16 +1,16 @@
-import img1 from "../../assets/Telas Plataformas OEE/1.png"
-import img2 from "../../assets/Telas Plataformas OEE/2.png"
-import img3 from "../../assets/Telas Plataformas OEE/3.png"
-import img4 from "../../assets/Telas Plataformas OEE/4.png"
-import img5 from "../../assets/Telas Plataformas OEE/5.png"
-import img6 from "../../assets/Telas Plataformas OEE/6.png"
-import img7 from "../../assets/Telas Plataformas OEE/7.png"
-import img8 from "../../assets/Telas Plataformas OEE/8.png"
-import img9 from "../../assets/Telas Plataformas OEE/9.png"
-import img10 from "../../assets/Telas Plataformas OEE/10.png"
-import img11 from "../../assets/Telas Plataformas OEE/11.png"
+import img1 from "../../assets/Telas-plataformas-OEE/1.png"
+import img2 from "../../assets/Telas-plataformas-OEE/2.png"
+import img3 from "../../assets/Telas-plataformas-OEE/3.png"
+import img4 from "../../assets/Telas-plataformas-OEE/4.png"
+import img5 from "../../assets/Telas-plataformas-OEE/5.png"
+import img6 from "../../assets/Telas-plataformas-OEE/6.png"
+import img7 from "../../assets/Telas-plataformas-OEE/7.png"
+import img8 from "../../assets/Telas-plataformas-OEE/8.png"
+import img9 from "../../assets/Telas-plataformas-OEE/9.png"
+import img10 from "../../assets/Telas-plataformas-OEE/10.png"
+import img11 from "../../assets/Telas-plataformas-OEE/11.png"
 
-import { ImgExamples } from "./styles"
+import { ImgContainer, ImgExamples } from "./styles"
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom';
 
@@ -76,10 +76,10 @@ export function Examples() {
         setImage(examples[nextIndex].path);
     }
     return (
-        <>
+        <ImgContainer>
             <a onClick={handleChangeImg}>
                 <ImgExamples src={imgSelected} />
             </a>
-        </>
+        </ImgContainer>
     )
 }
