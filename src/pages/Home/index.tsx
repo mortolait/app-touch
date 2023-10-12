@@ -11,19 +11,19 @@ export function Home() {
     const cardVantagens = [
         {
             path: Component1,
-            url: '../../../src/assets/pdfs/geo.pdf'
+            url: '../../../src/assets/pdfs-plataforma/geo.pdf'
         },
         {
             path: Component2,
-            url: '../../../src/assets/pdfs/telemetriaeficienciaindustrial.pdf'
+            url: '../../../src/assets/pdfs-plataforma/telemetriaeficienciaindustrial.pdf'
         },
         {
             path: Component3,
-            url: '../../../src/assets/pdfs/telemetriaveiculos.pdf'
+            url: '../../../src/assets/pdfs-plataforma/telemetriaveiculos.pdf'
         },
         {
             path: Component4,
-            url: '../../../src/assets/pdfs/visaocomputacional.pdf'
+            url: '../../../src/assets/pdfs-plataforma/visaocomputacional.pdf'
         }
     ]
     return (
