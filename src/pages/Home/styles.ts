@@ -7,6 +7,8 @@ export const HomeContainer = styled.div`
     justify-content: center;
     align-items: center;
     background-image: url(${imgBackground});
+    background-position: cover;
+    background-size: cover;
     box-shadow: inset 0px -500px #D9D9D9;
 
     @media(max-width: 1400px){
