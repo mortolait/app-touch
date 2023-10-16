@@ -43,7 +43,7 @@ export function Home() {
                     //     </a>
                     // ))
                     cardVantagens.map((x) => (
-                        <a href={`catalogos/${x.url}`} target="_blank" key={x.path}>
+                        <a href={`teste`} target="_blank" key={x.path}>
                             <img src={x.path} alt="" />
                         </a>
                     ))

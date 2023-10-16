@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import { ContainerCatalagos, ImagemCatalogo } from "./styles"
 
 import img1geo from "../../assets/geo.jpeg"
@@ -27,7 +27,9 @@ import img5vis from "../../../public/pdfs-plataforma/visao-computacional/visaoco
 
 export function Catalagos(){
 
-    const { id } = useParams();
+    // const { id } = useParams();
+    const id = "geo"
+
     let imagens:any = []
 
     if(id == "geo") {
