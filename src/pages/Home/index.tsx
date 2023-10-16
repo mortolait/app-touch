@@ -43,7 +43,7 @@ export function Home() {
                     //     </a>
                     // ))
                     cardVantagens.map((x) => (
-                        <NavLink to={`catalogos/${x.url}`}>
+                        <NavLink to={`catalogos/${x.url}`} target="_blank">
                             <img src={x.path} alt="" />
                         </NavLink>
                     ))
