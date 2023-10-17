@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom";
-import { ContainerCatalagos, ImagemCatalogo } from "./styles"
+import { NavLink, useParams } from "react-router-dom";
+import { ContainerCatalagos, ImagemCatalogo,Container } from "./styles"
 
 import img1geo from "../../assets/geo.jpeg"
 import img2geo from "../../assets/geo 2.jpeg"
@@ -25,14 +25,15 @@ import img3vis from "../../../public/pdfs-plataforma/visao-computacional/visaoco
 import img4vis from "../../../public/pdfs-plataforma/visao-computacional/visaocomputacional 4.jpeg"
 import img5vis from "../../../public/pdfs-plataforma/visao-computacional/visaocomputacional 5.jpeg"
 
-export function Catalagos(){
+import { KeyReturn } from "phosphor-react";
 
-     const { id } = useParams();
- 
+export function Catalagos() {
 
-    let imagens:any = []
+    const { id } = useParams();
 
-    if(id == "geo") {
+    let imagens: any = []
+
+    if (id == "geo") {
         imagens = [
             {
                 img: img1geo
@@ -51,7 +52,7 @@ export function Catalagos(){
             }
         ]
     }
-    else if(id == "telemetriaeficienciaindustrial"){
+    else if (id == "telemetriaeficienciaindustrial") {
         imagens = [
             {
                 img: img1intel
@@ -70,7 +71,7 @@ export function Catalagos(){
             }
         ]
     }
-    else if(id == "telemetriaveiculos"){
+    else if (id == "telemetriaveiculos") {
         imagens = [
             {
                 img: img1veitel
@@ -89,7 +90,7 @@ export function Catalagos(){
             }
         ]
     }
-    else if(id == "visaocomputacional"){
+    else if (id == "visaocomputacional") {
         imagens = [
             {
                 img: img1vis
@@ -108,13 +109,18 @@ export function Catalagos(){
             }
         ]
     }
-    return(
-        <ContainerCatalagos>
-            {
-                imagens.map((i:any)=>(
+    return (
+        <Container>
+            <NavLink to={'/'}>
+                <KeyReturn size={50} />
+            </NavLink>
+            <ContainerCatalagos>
+                {
+                    imagens.map((i: any) => (
                         <ImagemCatalogo src={i.img} alt="" />
-                ))
-            }
-        </ContainerCatalagos>
+                    ))
+                }
+            </ContainerCatalagos>
+        </Container>
     )
 }

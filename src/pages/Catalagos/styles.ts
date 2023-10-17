@@ -9,3 +9,15 @@ export const ContainerCatalagos = styled.div`
 export const ImagemCatalogo = styled.img`
     max-width: 80%;
 `
+export const Container = styled.div`
+    a{
+        color:  #091F33;
+        position: fixed;
+        margin-left: 1rem;
+
+        &:hover{
+            color:${props => props.theme['blue']} ;
+            transition: 1s;
+        }
+    }
+`

@@ -7,6 +7,7 @@ import buttonPlataform from "../../assets/button-plataform.png"
 import { Header } from "../../components/Header";
 import { NavLink } from "react-router-dom";
 
+
 export function Home() {
     const cardVantagens = [
         {
@@ -36,14 +37,11 @@ export function Home() {
             </div>
 
             <CardsContainer>
+           
                 {
-                    // cardVantagens.map((x) => (
-                    //     <a href={x.url} target="_blank" key={x.path}>
-                    //         <img src={x.path} alt="" />
-                    //     </a>
-                    // ))
+                    
                     cardVantagens.map((x) => (
-                        <NavLink to={`catalogos/${x.url}`} target="_blank">
+                        <NavLink to={`catalogos/${x.url}`}>
                             <img src={x.path} alt="" />
                         </NavLink>
                     ))
